@@ -1,0 +1,41 @@
+{
+  "version": "2.3.0",
+  "summary": {
+    "title": "Sitio web de la biblioteca universitaria",
+    "owner": "programación segura",
+    "description": "El sitio web de la biblioteca universitaria es la primera implementación de un\nsitio web para brindar servicios en línea a los bibliotecarios y usuarios de la biblioteca\n(estudiantes y personal universitario).",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [
+      {
+        "name": "David Carrión Romero"
+      }
+    ],
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "DF biblioteca universitaria",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.3.0",
+        "cells": [],
+        "description": "Diagrama de flujo de datos nivel 0 para el sistema web de la biblioteca universitaria"
+      },
+      {
+        "id": 1,
+        "title": "DF inicio sesión de usuario",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.3.0",
+        "cells": [],
+        "description": "Diagrama de flujo de datos nivel 1, describiendo el proceso de inicio de sesión para usuarios del sistema de la biblioteca universitaria"
+      }
+    ],
+    "diagramTop": 2,
+    "reviewer": "Vera Amaro Guilermo Humberto",
+    "threatTop": 0
+  }
+}
