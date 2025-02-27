@@ -398,8 +398,7 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
                 "targetMarker": {
                   "name": "block"
                 },
@@ -454,7 +453,7 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "isBidirectional": false,
               "isEncrypted": true,
               "isPublicNetwork": false,
@@ -463,8 +462,8 @@
                 {
                   "id": "ad8b5913-a629-4d65-8a56-17bd583732e1",
                   "title": "Man in the middle",
-                  "status": "Open",
-                  "severity": "TBA",
+                  "status": "Mitigated",
+                  "severity": "Low",
                   "type": "Information disclosure",
                   "description": "Un intermediario puede interceptar los paquetes enviados si se usa una conexión insegura",
                   "mitigation": "Usar https en vez de http",
@@ -476,7 +475,7 @@
               ],
               "threatFrequency": {
                 "tampering": 0,
-                "informationDisclosure": 1,
+                "informationDisclosure": 3,
                 "denialOfService": 0
               }
             },
@@ -568,7 +567,26 @@
               "isEncrypted": true,
               "isPublicNetwork": false,
               "protocol": "HTTPS",
-              "threats": []
+              "threats": [
+                {
+                  "id": "11b924c8-a663-4192-a877-59b436f42c60",
+                  "title": "Man in the middle",
+                  "status": "Mitigated",
+                  "severity": "Low",
+                  "type": "Information disclosure",
+                  "description": "Se podrían interceptar los mensajes enviados por http",
+                  "mitigation": "Usar https",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 2,
+                "denialOfService": 0
+              }
             },
             "id": "08430d4f-f939-437b-85c1-2a3c009acbea",
             "source": {
@@ -583,6 +601,10 @@
               {
                 "x": 640,
                 "y": 160
+              },
+              {
+                "x": 610,
+                "y": 210
               }
             ]
           },
@@ -650,7 +672,26 @@
               "isEncrypted": true,
               "isPublicNetwork": false,
               "protocol": "HTTPS",
-              "threats": []
+              "threats": [
+                {
+                  "id": "a49a4d2f-054e-4d4c-98b4-411ac13dd1d9",
+                  "title": "Man in the middle",
+                  "status": "Mitigated",
+                  "severity": "Low",
+                  "type": "Information disclosure",
+                  "description": "Se podrían interceptar los mensajes enviados por http",
+                  "mitigation": "Usar https",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 8,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 2,
+                "denialOfService": 0
+              }
             },
             "id": "f3767b38-6e59-4c18-b4f0-3a6df235a8ae",
             "source": {
@@ -732,7 +773,26 @@
               "isEncrypted": true,
               "isPublicNetwork": false,
               "protocol": "HTTPS",
-              "threats": []
+              "threats": [
+                {
+                  "id": "f8a21b78-a29c-4c33-9fba-3d86fc96afca",
+                  "title": "Man in the middle",
+                  "status": "Mitigated",
+                  "severity": "Low",
+                  "type": "Information disclosure",
+                  "description": "Se podrían interceptar los mensajes enviados por http",
+                  "mitigation": "Usar https",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 2,
+                "denialOfService": 0
+              }
             },
             "id": "7f4da27f-0588-4b7e-8b64-9b924f7f69cf",
             "source": {
@@ -748,7 +808,17 @@
                 "x": 466,
                 "y": 240
               }
-            ]
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "flow",
@@ -1142,6 +1212,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 12,
             "ports": {
               "groups": {
                 "top": {
@@ -1225,7 +1296,6 @@
               ]
             },
             "id": "5dd6b5b3-938e-44e6-b51b-3f109af2f812",
-            "zIndex": 12,
             "data": {
               "type": "tm.Store",
               "name": "Disco duro del servidor",
@@ -1257,6 +1327,6 @@
     ],
     "diagramTop": 2,
     "reviewer": "Vera Amaro Guilermo Humberto",
-    "threatTop": 2
+    "threatTop": 8
   }
 }
