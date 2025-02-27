@@ -808,17 +808,7 @@
                 "x": 466,
                 "y": 240
               }
-            ],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            ]
           },
           {
             "shape": "flow",
@@ -1079,11 +1069,13 @@
                 "text": "Base de datos"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1179,13 +1171,46 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": true,
               "isSigned": false,
               "storesCredentials": true,
               "storesInventory": true,
-              "threats": []
+              "threats": [
+                {
+                  "id": "e3e067af-57d5-4975-8fbf-71dfe84f221b",
+                  "title": "Inyección SQL",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Pueden intentar enviar consultas sql a la base de datos",
+                  "mitigation": "Limitar los permisos del usuario de la base de datos, validar entradas, usar ORMs",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 9,
+                  "score": ""
+                },
+                {
+                  "id": "8078f8aa-3266-4869-8c45-711ef2cefb5c",
+                  "title": "Robo de credenciales",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Repudiation",
+                  "description": "Un atacante podría conseguir las credenciales de la base de datos para realizar consultas",
+                  "mitigation": "cifrar los datos sensibles, mantener resguardada la contraseña de la base de datos en un lugar seguro",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 10,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "repudiation": 1,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
             }
           },
           {
@@ -1327,6 +1352,6 @@
     ],
     "diagramTop": 2,
     "reviewer": "Vera Amaro Guilermo Humberto",
-    "threatTop": 8
+    "threatTop": 10
   }
 }
