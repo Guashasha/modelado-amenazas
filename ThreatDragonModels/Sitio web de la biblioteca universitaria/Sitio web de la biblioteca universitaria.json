@@ -158,7 +158,7 @@
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
-                "elevationOfPrivilege": 1
+                "elevationOfPrivilege": 2
               }
             }
           },
@@ -463,7 +463,7 @@
                   "id": "ad8b5913-a629-4d65-8a56-17bd583732e1",
                   "title": "Man in the middle",
                   "status": "Mitigated",
-                  "severity": "Low",
+                  "severity": "High",
                   "type": "Information disclosure",
                   "description": "Un intermediario puede interceptar los paquetes enviados si se usa una conexión insegura",
                   "mitigation": "Usar https en vez de http",
@@ -475,7 +475,7 @@
               ],
               "threatFrequency": {
                 "tampering": 0,
-                "informationDisclosure": 3,
+                "informationDisclosure": 4,
                 "denialOfService": 0
               }
             },
@@ -572,7 +572,7 @@
                   "id": "11b924c8-a663-4192-a877-59b436f42c60",
                   "title": "Man in the middle",
                   "status": "Mitigated",
-                  "severity": "Low",
+                  "severity": "High",
                   "type": "Information disclosure",
                   "description": "Se podrían interceptar los mensajes enviados por http",
                   "mitigation": "Usar https",
@@ -584,7 +584,7 @@
               ],
               "threatFrequency": {
                 "tampering": 0,
-                "informationDisclosure": 2,
+                "informationDisclosure": 3,
                 "denialOfService": 0
               }
             },
@@ -677,7 +677,7 @@
                   "id": "a49a4d2f-054e-4d4c-98b4-411ac13dd1d9",
                   "title": "Man in the middle",
                   "status": "Mitigated",
-                  "severity": "Low",
+                  "severity": "High",
                   "type": "Information disclosure",
                   "description": "Se podrían interceptar los mensajes enviados por http",
                   "mitigation": "Usar https",
@@ -689,7 +689,7 @@
               ],
               "threatFrequency": {
                 "tampering": 0,
-                "informationDisclosure": 2,
+                "informationDisclosure": 3,
                 "denialOfService": 0
               }
             },
@@ -778,7 +778,7 @@
                   "id": "f8a21b78-a29c-4c33-9fba-3d86fc96afca",
                   "title": "Man in the middle",
                   "status": "Mitigated",
-                  "severity": "Low",
+                  "severity": "High",
                   "type": "Information disclosure",
                   "description": "Se podrían interceptar los mensajes enviados por http",
                   "mitigation": "Usar https",
@@ -790,7 +790,7 @@
               ],
               "threatFrequency": {
                 "tampering": 0,
-                "informationDisclosure": 2,
+                "informationDisclosure": 3,
                 "denialOfService": 0
               }
             },
@@ -874,7 +874,26 @@
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "911f106f-3a35-42e0-8a0e-377500d07dc7",
+                  "title": "Man in the middle",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Un intermediario podría interceptar las consultas y respuestas de la base de datos",
+                  "mitigation": "Usar un protocolo de conexion seguro entre el servidor y la base de datos",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 11,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
             },
             "id": "5d925e19-75b5-446e-b77b-6c72774dfcd1",
             "source": {
@@ -886,6 +905,10 @@
               "port": "e7d33130-d271-424a-a495-5a443196fda3"
             },
             "vertices": [
+              {
+                "x": 680,
+                "y": 325
+              },
               {
                 "x": 730,
                 "y": 300
@@ -1352,6 +1375,6 @@
     ],
     "diagramTop": 2,
     "reviewer": "Vera Amaro Guilermo Humberto",
-    "threatTop": 10
+    "threatTop": 11
   }
 }
