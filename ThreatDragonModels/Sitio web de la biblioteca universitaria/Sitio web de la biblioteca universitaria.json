@@ -42,6 +42,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -125,7 +126,6 @@
               ]
             },
             "id": "5d2c63f9-2a3e-417d-96dd-56e99b7748e9",
-            "zIndex": 1,
             "data": {
               "type": "tm.Process",
               "name": "Sistema biblioteca\nuniversitaria",
@@ -161,6 +161,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -244,7 +245,6 @@
               ]
             },
             "id": "5a14861f-fb2d-44a8-9f00-6dcbc01048b7",
-            "zIndex": 2,
             "data": {
               "type": "tm.Actor",
               "name": "Usuario",
@@ -277,6 +277,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -360,126 +361,9 @@
               ]
             },
             "id": "78e036c0-179c-42c7-9a7e-d9640a270c85",
-            "zIndex": 3,
             "data": {
               "type": "tm.Actor",
               "name": "Bibliotecario",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "providesAuthentication": false,
-              "threats": []
-            }
-          },
-          {
-            "position": {
-              "x": 250,
-              "y": 240
-            },
-            "size": {
-              "width": 112.5,
-              "height": 60
-            },
-            "attrs": {
-              "text": {
-                "text": "Empleado"
-              },
-              "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "actor",
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "df66a3ed-67d6-42a5-8186-505a2cc93fa1"
-                },
-                {
-                  "group": "right",
-                  "id": "7a82fb86-153c-4c91-b587-e38883e28809"
-                },
-                {
-                  "group": "bottom",
-                  "id": "97d42695-105d-45c8-9966-f1730b0bb80f"
-                },
-                {
-                  "group": "left",
-                  "id": "dcd24664-1859-4a8b-9cdd-843be2da83a8"
-                }
-              ]
-            },
-            "id": "4e9daeed-9fda-47c4-87e4-93ebe8539547",
-            "zIndex": 4,
-            "data": {
-              "type": "tm.Actor",
-              "name": "Empleado",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -519,7 +403,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Resultado",
+                    "text": "HTTP\nResponse",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -549,9 +433,9 @@
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "isBidirectional": false,
-              "isEncrypted": false,
+              "isEncrypted": true,
               "isPublicNetwork": false,
-              "protocol": "",
+              "protocol": "https",
               "threats": []
             },
             "id": "1b422757-dd8a-415a-ad3f-f06234502ebf",
@@ -567,6 +451,14 @@
               {
                 "x": 520,
                 "y": 160
+              },
+              {
+                "x": 540,
+                "y": 180
+              },
+              {
+                "x": 550,
+                "y": 210
               }
             ]
           },
@@ -601,7 +493,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Resultado",
+                    "text": "HTTP\nResponse",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -683,7 +575,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Resultado",
+                    "text": "HTTP\nResponse",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -765,7 +657,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Resultado",
+                    "text": "HTTP\nResponse",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -795,9 +687,9 @@
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "isBidirectional": false,
-              "isEncrypted": false,
+              "isEncrypted": true,
               "isPublicNetwork": false,
-              "protocol": "",
+              "protocol": "HTTPS",
               "threats": []
             },
             "id": "7f4da27f-0588-4b7e-8b64-9b924f7f69cf",
@@ -981,6 +873,83 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "labels": [
+              {
+                "markup": [
+                  {
+                    "tagName": "ellipse",
+                    "selector": "labelBody"
+                  },
+                  {
+                    "tagName": "text",
+                    "selector": "labelText"
+                  }
+                ],
+                "attrs": {
+                  "labelText": {
+                    "text": "HTTP\nResponse",
+                    "textAnchor": "middle",
+                    "textVerticalAnchor": "middle"
+                  },
+                  "labelBody": {
+                    "ref": "labelText",
+                    "refRx": "50%",
+                    "refRy": "60%",
+                    "fill": "#fff",
+                    "strokeWidth": 0
+                  }
+                },
+                "position": {
+                  "distance": 0.5,
+                  "args": {
+                    "keepGradient": true,
+                    "ensureLegibility": true
+                  }
+                }
+              }
+            ],
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Paginas web",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "97e20c3b-e0c3-4052-a7f1-762777095582",
+            "source": {
+              "cell": "5dd6b5b3-938e-44e6-b51b-3f109af2f812",
+              "port": "42f80613-5cae-4fd7-b4a3-07d4e85ad2d8"
+            },
+            "target": {
+              "cell": "5d2c63f9-2a3e-417d-96dd-56e99b7748e9",
+              "port": "4affb55c-faf4-4987-958e-224412092438"
+            },
+            "vertices": []
+          },
+          {
             "position": {
               "x": 808,
               "y": 295
@@ -1004,6 +973,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -1087,10 +1057,132 @@
               ]
             },
             "id": "ef4a73db-19ce-4306-864b-fdc338e56d62",
-            "zIndex": 11,
             "data": {
               "type": "tm.Store",
               "name": "Base de datos",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": true,
+              "isSigned": false,
+              "storesCredentials": true,
+              "storesInventory": true,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 523,
+              "y": 484
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Disco duro del servidor"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "42f80613-5cae-4fd7-b4a3-07d4e85ad2d8"
+                },
+                {
+                  "group": "right",
+                  "id": "c7fb4595-e685-4f53-9680-18444d394730"
+                },
+                {
+                  "group": "bottom",
+                  "id": "a92bfdaa-f747-48dc-ab32-d414a1825a20"
+                },
+                {
+                  "group": "left",
+                  "id": "7de84888-808a-4853-b661-482d1edee054"
+                }
+              ]
+            },
+            "id": "5dd6b5b3-938e-44e6-b51b-3f109af2f812",
+            "zIndex": 12,
+            "data": {
+              "type": "tm.Store",
+              "name": "Disco duro del servidor",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
