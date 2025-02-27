@@ -403,7 +403,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "HTTP\nResponse",
+                    "text": "Query",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -493,7 +493,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "HTTP\nResponse",
+                    "text": "Query",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -575,7 +575,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "HTTP\nResponse",
+                    "text": "Query",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -657,7 +657,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "HTTP\nResponse",
+                    "text": "Query",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -739,7 +739,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Resultado",
+                    "text": "Query",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -786,6 +786,10 @@
             "vertices": [
               {
                 "x": 730,
+                "y": 300
+              },
+              {
+                "x": 760,
                 "y": 300
               }
             ]
@@ -903,7 +907,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "HTTP\nResponse",
+                    "text": "Query",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
