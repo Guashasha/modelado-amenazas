@@ -1500,8 +1500,8 @@
                 "text": "Modulo de\nlogin"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1597,12 +1597,34 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": true,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "ba6bef5c-dfd0-45fd-b943-b0bd0060c3a7",
+                  "title": "Ataque de fuerza bruta",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "Un atacante podría intentar iniciar sesión adivinando las credenciales de un usuario",
+                  "mitigation": "Limitar el tiempo entre intentos de inicio de sesión, agregar verificación de dos pasos",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 17,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -2514,11 +2536,13 @@
                 "text": "Base de datos"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -2614,7 +2638,7 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": true,
               "isSigned": false,
@@ -2624,7 +2648,7 @@
                 {
                   "id": "52cb8e25-fccb-4bec-84da-ecc74b55444e",
                   "title": "inyección SQL",
-                  "status": "Mitigated",
+                  "status": "Open",
                   "severity": "High",
                   "type": "Information disclosure",
                   "description": "Un atacante podría enviar consultas a la base de datos",
@@ -2638,7 +2662,7 @@
               "threatFrequency": {
                 "tampering": 0,
                 "repudiation": 0,
-                "informationDisclosure": 1,
+                "informationDisclosure": 2,
                 "denialOfService": 0
               }
             }
@@ -2649,6 +2673,6 @@
     ],
     "diagramTop": 2,
     "reviewer": "Vera Amaro Guilermo Humberto",
-    "threatTop": 16
+    "threatTop": 17
   }
 }
