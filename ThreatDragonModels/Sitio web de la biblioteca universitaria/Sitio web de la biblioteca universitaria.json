@@ -1788,7 +1788,26 @@
               "isEncrypted": true,
               "isPublicNetwork": false,
               "protocol": "HTTPS",
-              "threats": []
+              "threats": [
+                {
+                  "id": "c4238603-de26-417d-bd89-4cd8b72874b5",
+                  "title": "Man in the middle",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Un intermediario podría interceptar paquetes enviados por y hacia el servidor",
+                  "mitigation": "Usar conexiones seguras como https",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 13,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             },
             "id": "89d35c15-5d05-44b6-84da-b45984a62175",
             "source": {
@@ -1800,6 +1819,10 @@
               "port": "bf91e040-552d-4061-b9a1-4282c4c176f5"
             },
             "vertices": [
+              {
+                "x": 330,
+                "y": 90
+              },
               {
                 "x": 260,
                 "y": 70
@@ -2029,7 +2052,26 @@
               "isEncrypted": true,
               "isPublicNetwork": false,
               "protocol": "HTTPS",
-              "threats": []
+              "threats": [
+                {
+                  "id": "bbfaafbb-b417-4f4a-9d01-727c3ea35dcf",
+                  "title": "Man in the middle",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Un intermediario podría interceptar paquetes enviados por y hacia el servidor",
+                  "mitigation": "Usar conexiones seguras como https",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 12,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
             },
             "id": "56c8472f-b3f8-4ddb-a334-fd7e0073831a",
             "source": {
@@ -2536,7 +2578,27 @@
               "isSigned": false,
               "storesCredentials": true,
               "storesInventory": true,
-              "threats": []
+              "threats": [
+                {
+                  "id": "52cb8e25-fccb-4bec-84da-ecc74b55444e",
+                  "title": "inyección SQL",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Un atacante podría enviar consultas a la base de datos",
+                  "mitigation": "limitar los permisos del usuario de la base de datos y validar entradas en el servidor y en el cliente",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 14,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
             }
           }
         ],
@@ -2545,6 +2607,6 @@
     ],
     "diagramTop": 2,
     "reviewer": "Vera Amaro Guilermo Humberto",
-    "threatTop": 11
+    "threatTop": 14
   }
 }
