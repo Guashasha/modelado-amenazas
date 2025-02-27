@@ -1372,7 +1372,7 @@
         "cells": [
           {
             "position": {
-              "x": 110,
+              "x": 90,
               "y": 120
             },
             "size": {
@@ -1619,8 +1619,8 @@
                 "text": "Servicio web"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1716,12 +1716,34 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": true,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "b36633a8-68d4-4def-9ea0-b026bad6ea11",
+                  "title": "Denegación de servicios",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Denial of service",
+                  "description": "Atacantes podrían llenar con un numero de peticiones anormal el servicio hasta que deja de funcionar",
+                  "mitigation": "Usar un balanceador de cargas, banear IPs si se detecta un ataque",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 15,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 1,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -2093,7 +2115,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -2148,12 +2171,31 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": true,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "3a4eeed2-19c7-49cb-8a88-f51abc9bf9ae",
+                  "title": "Man in the middle",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Un intermediario podría interceptar los mensajes al modulo de inicio de sesión",
+                  "mitigation": "Usar protocolos de conexion seguros",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 16,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
             },
             "id": "285c9526-809b-4283-8e75-07319e47bc7d",
             "source": {
@@ -2338,7 +2380,7 @@
           {
             "position": {
               "x": 304,
-              "y": 356
+              "y": 396
             },
             "size": {
               "width": 120,
@@ -2359,6 +2401,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -2442,7 +2485,6 @@
               ]
             },
             "id": "ab656e20-931b-402e-8753-18f40a545b90",
-            "zIndex": 11,
             "data": {
               "type": "tm.Store",
               "name": "Disco duro del servidor",
@@ -2482,6 +2524,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 12,
             "ports": {
               "groups": {
                 "top": {
@@ -2565,7 +2608,6 @@
               ]
             },
             "id": "b0fc592c-7a0d-434c-bf63-da2b0a5c169b",
-            "zIndex": 12,
             "data": {
               "type": "tm.Store",
               "name": "Base de datos",
@@ -2607,6 +2649,6 @@
     ],
     "diagramTop": 2,
     "reviewer": "Vera Amaro Guilermo Humberto",
-    "threatTop": 14
+    "threatTop": 16
   }
 }
